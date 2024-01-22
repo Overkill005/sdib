@@ -8,7 +8,6 @@ public class Break{
             continue;
             }
             System.out.println(arr[i]);
-            
         }
     }
 }
