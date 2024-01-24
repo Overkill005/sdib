@@ -11,5 +11,7 @@ public class quadratic_root {
         r1=(-b+Math.sqrt((b*b)-(4*a*c)))/2*a;
         r2=(-b-Math.sqrt((b*b)-(4*a*c)))/2*a;
         System.out.println("Roots :"+r1+" "+r2);
+        sc.close();
+
     }
 }

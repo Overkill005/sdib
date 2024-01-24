@@ -12,5 +12,7 @@ public class sum_series2 {
             s = s + (Math.pow(x,i) / Math.pow(2,i));
         }
         System.out.println("Sum of series :" + s);
+        sc.close();
+
     }
 }

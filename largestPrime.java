@@ -18,5 +18,7 @@ public class largestPrime {
                     break;
             }
         }
+        sc.close();
+
     }
 }

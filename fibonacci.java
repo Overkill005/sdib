@@ -14,6 +14,8 @@ public class fibonacci {
             s1 = s2;
             s2 = s;
         }
+        sc.close();
+
     }
 }
 // 0 1 1 2 3 5 8

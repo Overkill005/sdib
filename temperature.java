@@ -7,5 +7,7 @@ public class temperature {
         System.out.println("Temperature in celcius :"+c+"°C");
         double f=(9/5)*c+32;
         System.out.println("Temperature in fahrenheit :"+f+"°F");
+        sc.close();
+
     }
 }

@@ -10,5 +10,7 @@ public class sum_plus_minus {
             k=k*-1;
         }
         System.out.println("Sum of series :" + s);
+        sc.close();
+
     }
 }

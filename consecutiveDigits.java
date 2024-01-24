@@ -20,5 +20,6 @@ public class consecutiveDigits {
         if (c == 0) {
             System.out.println(k + " does not have consecutive digits");
         }
+        sc.close();
     }
 }

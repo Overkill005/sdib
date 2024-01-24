@@ -13,5 +13,7 @@ public class gcd {
                 gcd = i;
         }
         System.out.println("GCD :" + gcd);
+        sc.close();
+
     }
 }

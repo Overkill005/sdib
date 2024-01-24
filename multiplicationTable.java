@@ -7,5 +7,7 @@ public class multiplicationTable {
         for(int i=1;i<=10;i++){
             System.out.println(x+" x "+i+" = "+x*i);
         }
+        sc.close();
+
     }
 }

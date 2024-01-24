@@ -15,5 +15,7 @@ public class digit_sameOrder {
             System.out.print(r1+"\t");
             s=s/10;
         }
+        sc.close();
+    
     }
 }

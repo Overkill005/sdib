@@ -10,5 +10,7 @@ public class sum_series {
             s = s + (1 / (double) i);
         }
         System.out.println("Sum of series :" + s);
+        sc.close();
+
     }
 }

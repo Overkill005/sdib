@@ -11,6 +11,8 @@ public class interest {
         int t=sc.nextInt();
         double i=(p*r*t)/100;
         System.out.println("Simple interest:"+i);
+        sc.close();
+
         
     }
     

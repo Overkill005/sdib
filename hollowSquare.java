@@ -20,5 +20,7 @@ public class hollowSquare {
             }
             System.out.println();
         }
+        sc.close();
+
     }
 }
