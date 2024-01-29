@@ -15,7 +15,7 @@ public class second_toHour {
             s=s-(m*60);
         }
         System.out.println(h+"hr "+m+"min "+s+"sec");
-        
+        sc.close();
 
     }
 }
