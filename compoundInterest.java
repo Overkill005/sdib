@@ -2,8 +2,8 @@ import java.util.*;
 
 public class compoundInterest {
     double ci(double p, double r, double n) {
-      
-     double c = p * Math.pow(1.0 + r / 100.0, n) - p;
+
+        double c = p * Math.pow(1.0 + r / 100.0, n) - p;
 
         return c;
     }
