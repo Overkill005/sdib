@@ -13,11 +13,11 @@ public class words {
             char ch = s.charAt(i);
             if (ch != ' ') {
                 b = b + ch;
-            }
-            else {
+            } else {
                 System.out.println(b);
                 b = "";
             }
         }
+        sc.close();
     }
 }

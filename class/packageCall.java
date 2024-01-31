@@ -7,7 +7,7 @@
 }
  */
 // import con.Calc;
-import con.*;                                //     use "java packageCall.java" to execute
+import com.seeree.core.*;                                //     use "java packageCall.java" to execute
 
 public class packageCall {
     public static void main(String[] args) {
