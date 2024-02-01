@@ -1,4 +1,4 @@
-public class smith {
+public class smith {   //85 -->8+5=13  ---> prime factors: 5,17 ---> 5+1+7=13
     int sumDigits(int n) {
         int s = 0;
         while (n > 0) {

@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.*; //1124 --->1+1+2+4=1*1*2*4
 
 public class spy {
     public static void main(String[] args) {

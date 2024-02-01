@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.*;   // 9   ---->  9^2=81    ----> 8+=9
 
 public class neonNumber {
     public static void main(String[] args) {
@@ -11,8 +11,7 @@ public class neonNumber {
             int r=sq%10;
             s=s+r;
             sq=sq/10;
-            System.out.println(s);
-            System.out.println();
+            
         }
         if(s==n){
             System.out.println(n+" is neon number");
