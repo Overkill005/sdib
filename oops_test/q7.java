@@ -53,7 +53,7 @@ public class q7 {
       }
 
 
+    sc.close();
     }
-    // sc.close();
   }
   

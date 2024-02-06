@@ -18,11 +18,12 @@ public class jaggedArray_dynamic {
       }
       System.out.println();
     }
-      for (int i = 0; i < r; i++) {
+    for (int i = 0; i < r; i++) {
       for (int j = 0; j < arr[i].length; j++) {
-        System.out.print(arr[i][j]+"\t");
+        System.out.print(arr[i][j] + "\t");
       }
       System.out.println();
     }
+    sc.close();
   }
 }

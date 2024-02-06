@@ -36,9 +36,9 @@ public class binarySearch {
     while (lo <= up) {
       m = up + lo / 2;
       if (n > arr[m]) {
-        lo++;
+        lo=m+1;
       } else if (n < arr[m]) {
-        up--;
+        up=m-1;
       } else {
         System.out.println(n + " found at index " + m+" after sort");
         break;
