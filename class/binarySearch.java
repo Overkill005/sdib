@@ -1,12 +1,14 @@
 import java.util.Scanner;
 
 public class binarySearch {
+
   void print(int arr[]) {
     for (int i : arr) {
       System.out.print(i + " ");
     }
-      System.out.println();
-    }
+    System.out.println();
+  }
+
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     binarySearch obj = new binarySearch();
@@ -31,24 +33,22 @@ public class binarySearch {
     System.out.println("Enter element to be searched : ");
     int n = sc.nextInt();
     sc.nextLine();
-    int m, lo = 0, up = x-1;
+    int m, lo = 0, up = x - 1;
     // System.out.println(m);
     while (lo <= up) {
       m = up + lo / 2;
       if (n > arr[m]) {
-        lo=m+1;
+        lo = m + 1;
       } else if (n < arr[m]) {
-        up=m-1;
+        up = m - 1;
       } else {
-        System.out.println(n + " found at index " + m+" after sort");
+        System.out.println(n + " found at index " + m + " after sort");
         break;
       }
-
     }
     if (up < lo) {
-      System.out.println(n+"  not found");
+      System.out.println(n + "  not found");
     }
-    
 
     sc.close();
   }
