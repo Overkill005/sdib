@@ -9,6 +9,7 @@ public class ScannerCheck {
     int rollno = sc.nextInt();
     System.out.println("Enter your fees : ");
     double fee = sc.nextDouble();
-    System.out.println("Name : "+name+"\tRoll no : "+rollno+"\tFees : "+fee);
+    System.out.println("Name : " + name + "\tRoll no : " + rollno + "\tFees : " + fee);
+    sc.close();
   }
 }

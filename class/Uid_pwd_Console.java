@@ -8,7 +8,7 @@ public class Uid_pwd_Console {
     String uid = c.readLine();
     System.out.println("Enter a password : ");
     char pwd[] = c.readPassword();
-    System.out.println(uid + " " + String.valueOf(pwd) + " " + pwd); //char[] to String : String.valueOf(pwd)
+    System.out.println(uid + " " + String.valueOf(pwd) + " m " + pwd); //char[] to String : String.valueOf(pwd)
     for (char ch : pwd) {
       System.out.print(ch);
     }

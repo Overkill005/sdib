@@ -14,6 +14,7 @@ public class voteCheck {
       int a=sc.nextInt();
       validate(a);
       System.out.println("Eligible to vote...");
+      sc.close();
     }
     catch (Exception e) {
       System.out.println(e);

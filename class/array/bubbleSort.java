@@ -1,6 +1,7 @@
+
 import java.util.Scanner;
 
-public class array_evenSum {
+public class bubbleSort {
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
@@ -11,11 +12,22 @@ public class array_evenSum {
     for (int i = 0; i < x; i++) {
       arr[i] = sc.nextInt();
     }
-    int s = 0;
+    int temp = 0;
     for (int i = 0; i < x; i++) {
-      if (i % 2 == 0) s = s + arr[i];
+      for (int j = 0; j < x - i - 1; j++) {
+        if (arr[j] > arr[j + 1]) {
+          temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
+        }
+      }
     }
-    System.out.println("Sum of even position of array elements :" + s);
+  System.out.print("Sorted array : ");
+    
+    for (int i = 0; i < x; i++) {
+      System.out.print(arr[i] + "\t");
+    }
+    System.out.println();
     sc.close();
   }
 }
