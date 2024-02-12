@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "event_handling",
+      "request": "launch",
+      "mainClass": "event_handling",
+      "projectName": "sdib_9a2449f9"
+    },
+    {
+      "type": "java",
       "name": "privateMember",
       "request": "launch",
       "mainClass": "privateMember",
