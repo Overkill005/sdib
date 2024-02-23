@@ -1,0 +1,13 @@
+<script type="text/javascript">
+		arr=["red","green","blue"];
+		i=0;
+	function show(){
+		document.body.bgColor=arr[i];
+		if(i==3){
+			i=0;
+		}
+		i++;
+		setTimeout("show()",1000);
+	}
+</script>
+<body onload="show()">

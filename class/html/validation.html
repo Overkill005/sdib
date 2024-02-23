@@ -1,0 +1,34 @@
+<html>
+<script>
+  function nameValid() {
+    uname = document.getElementById("uname").value;
+    unamesms = document.getElementById("unamesms");
+    if (uname == "") {
+      unamesms.innerHTML = "Name cannot be null";
+      return false;
+    } else {
+      unamesms.innerHTML = "";
+      return true;
+    }
+  }
+  function check() {
+    nameValid = nameValid();
+    if (nameValid) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+</script>
+
+  <body>
+    <form method="get" onsubmit="return check()" action="save.html">
+    Name : <input type="text" id="uname" />
+    
+    <span id="unamesms"></span>
+    <br />
+    <input type="submit" value="save" />
+  </form>
+</body>
+
+</html>

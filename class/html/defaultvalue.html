@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+<script>
+  
+  function showvalue(){
+    a=document.getElementById('k').value;
+    alert(a);
+  }
+  function showdefaultvalue(){
+    a=document.getElementById('k').defaultValue;
+    alert(a);
+  }
+</script>
+<body>
+  <input type="text" value="search" id="k">
+  <br>
+  <input type="button" value="value" onclick="showvalue()">
+  <input type="button" value="default" onclick="showdefaultvalue()">
+</body>
+</html>

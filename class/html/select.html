@@ -1,0 +1,11 @@
+<script>
+  function show(obj){
+    document.body.bgColor=obj.value;
+  }
+</script>
+<select onchange="show(this)">
+  <option hidden="hidden">Choose</option>                <!--     here the choose option will only be visible when the options is not expanded -->
+   <option value="">red</option>          <!--   red will not work because value is null -->
+  <option value="green">GREEN</option>
+  <option>blue</option>
+</select>

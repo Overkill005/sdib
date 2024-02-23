@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	function show(){
+		alert("Button clicked using function");
+	}
+	function swap(){
+		temp=document.getElementById("a").value;
+		document.getElementById("a").value=document.getElementById("b").innerHTML;
+		document.getElementById("b").innerHTML=temp;
+	}
+</script>
+<input type="button" value="OK" name="" onclick="document.write('Welcome')" />
+<input type="button" value="Alert" name="" onclick="alert('Button clicked')" />
+<input type="button" value="Alert" name="" onclick="show()" />
+<br>
+<br>
+<br>
+<input type="text" value="sdi" id="a" />
+<h1 id="b">sanskar</h1>
+<input type="button" value="swap" onclick="swap()"/>

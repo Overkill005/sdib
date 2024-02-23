@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+<script>
+  
+function foc(obj){
+  if(obj.defaultValue==obj.value){
+    obj.value="";
+  }
+}
+function blu(obj){
+  if(obj.value==""){
+    obj.value=obj.defaultValue;
+  }
+}
+</script>
+<body>
+  <input type="text" value="search" onfocus="foc(this)" onblur="blu(this)" id="k">  
+  <input type="text" placeholder="search">
+</body>
+</html>

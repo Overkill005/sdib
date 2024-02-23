@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table{
+      border-spacing: 0;
+      z-index:-1;
+    }
+    td {
+      padding: 5rem;
+      border: 1px solid black;
+      text-align: center;
+    }
+    #inv{
+      border: none;
+    }
+  </style>
+  <body>
+    <div class="t">
+    <table>
+      <tr>
+        <td colspan="2">1</td>
+        <td rowspan="2">2</td>
+        <td rowspan="2">3</td>
+      </tr>
+      <tr>
+        <td colspan="2" rowspan="2">4</td>
+        <td colspan="2" id="inv"></td>
+      </tr>
+      <tr>
+        <td colspan="2">5</td>
+      </tr>
+      <tr>
+        <td rowspan="2">6</td>
+        <td rowspan="2">7</td>
+        <td colspan="2">8</td>
+      </tr>
+      <tr>
+        <td colspan="2">9</td>
+      </tr>
+    </table>
+    </div>
+  </body>
+</html>

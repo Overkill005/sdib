@@ -1,0 +1,14 @@
+<script type="text/javascript">
+		arr=["image/frame1.jpg","image/frame2.jpg"];
+		i=0;
+	function show(){
+		document.getElementById("i").src=arr[i];
+		i++;
+		if(i==arr.length){
+			i=0;
+		}
+		setTimeout("show()",500);
+	}
+</script>
+<body onload="show()">
+	<img id="i">

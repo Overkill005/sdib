@@ -1,0 +1,12 @@
+<script>
+  function show(e){
+    ch=e.which;
+    if((ch>=65 && ch<=90 )||(ch>=97 && h<=122)){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+</script>
+ <input type="text" onkeypress="return show(event)">    <!--  only character input allowed -->
