@@ -1,0 +1,11 @@
+<script>
+  arr=[10,20,30,40];
+  function sum(name,arg){
+    sum=0;
+    for (i in arg){
+      sum+=parseInt(arg[i]);
+    }
+    return `${name}  ${sum}`
+  }
+  document.write(sum("Sanskar",arr));
+</script>

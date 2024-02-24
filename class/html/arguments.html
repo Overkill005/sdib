@@ -1,0 +1,10 @@
+<script>
+  function add(){
+    let sum=0;
+    for(i in arguments){     //arguments only works for integers
+      sum+=arguments[i];
+    }
+    return sum;
+  }
+  document.write(add(1,2,3,4,5,6));
+</script>

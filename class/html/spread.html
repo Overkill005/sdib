@@ -1,0 +1,23 @@
+<script>
+  function sum(name,...args){
+    console.log(args);
+    document.write(`This is for ${name}`);
+    sum=0;
+    for (i in args){
+      sum+=args[i];
+    }
+    document.write(`<br>Sum  : ${sum}`);
+  }
+  sum("Sanskar",10,20,30,40);
+  var arr=[50,60,70,80];
+  let s=0;
+  function add(...args){
+    console.log(args);
+    for( i in args[0]){
+        s+=args[0][i];
+
+      }
+      document.write(`<br>${s}`);
+  }
+  add(arr);
+</script>

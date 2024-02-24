@@ -1,0 +1,10 @@
+<script>
+  function add(name,...nums){         //can use any name after 3dots    ...............   rest argument means 1st argument and rest
+    let sum=0;
+    for(i in nums){
+      sum+=nums[i];
+    }
+    return `Name is ${name} and sum is ${sum}`
+  }
+  document.write(add('sdi',10,20,30,40));
+</script>
