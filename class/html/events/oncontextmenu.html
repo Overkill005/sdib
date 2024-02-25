@@ -1,0 +1,8 @@
+<div oncontextmenu="context(event)">Right-click me</div>
+<script>
+    function context(e) {
+        e.preventDefault(); 
+        console.log('Context menu opened!');
+        alert('Context menu opened!');
+    }
+</script>

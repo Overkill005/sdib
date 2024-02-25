@@ -1,0 +1,37 @@
+<div style="height: 200px; overflow: scroll" onscroll="scrolled()">
+  <h2>
+    Scroll on me
+    <br />
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam culpa,
+    reprehenderit voluptas porro laboriosam fugit voluptates ad repudiandae
+    velit eaque numquam? Explicabo ipsam molestias quos, ea unde iste sed porro
+    reprehenderit similique enim totam velit nobis excepturi suscipit,
+    voluptatum nihil. Consequatur, architecto fugit repellat adipisci minima
+    illo iure esse temporibus enim perspiciatis quibusdam quam sint? Facere
+    aspernatur delectus illo sit incidunt asperiores quo aut repellendus hic
+    nihil obcaecati nesciunt quae nemo eius ipsa corporis ex nobis eos
+    laudantium eligendi, temporibus natus sunt ad ipsum. Dicta soluta placeat,
+    non esse nihil voluptatum quos velit illo eum, excepturi fugiat obcaecati
+    sint ducimus veritatis voluptas sit corrupti? Eos, optio soluta. Repellat
+    minima nisi ipsum consectetur ipsa eaque quia? Cumque possimus dolor ipsum
+    fugit quos earum explicabo sint iure, eum debitis quibusdam excepturi esse
+    vero, error nostrum inventore, laborum at minus ad placeat ipsam? Accusamus
+    odit quidem sint temporibus possimus voluptatum modi laborum animi a sed
+    magni, at ab quisquam alias neque aut placeat error voluptatem quia tenetur
+    tempora inventore provident? Error culpa hic odit ducimus architecto quod
+    quas natus dicta vitae sunt laudantium vel commodi quaerat illo veniam,
+    delectus similique. Vel perferendis reprehenderit est, earum quam illo
+    dolores, possimus impedit provident et nulla.
+  </h2>
+</div>
+<p id="pp"></p>
+<script>
+  let x = 0;
+  let pp = document.getElementById("pp");
+
+  function scrolled() {
+    pp.innerHTML = "You scrolled " + (x += 1) + " times";
+    console.clear();
+    console.log("You scrolled " + (x += 1) + " times");
+  }
+</script>
