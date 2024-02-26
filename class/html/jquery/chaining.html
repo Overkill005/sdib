@@ -1,0 +1,16 @@
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"
+></script>
+<script>
+  $(document).ready(function () {
+    $("#s").click(function () {
+      $("#im").hide(2000).show(1000).fadeOut(2000).fadeIn(1000);     //executes in sequence
+    });
+  });
+</script>
+<input type="button" value="Show / Hide" id="s" />
+
+<br />
+<img src="../image/background.jpg" id="im" alt="" />

@@ -1,0 +1,31 @@
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"
+></script>
+<script>
+  $(document).ready(function () {
+    $("#btn").click(function () {
+      $("#t").addClass("h");
+      $("#t").removeClass("s");
+    })
+  
+  })
+  </script>
+<style>
+  div{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+  }
+  .h{
+    display:none;
+  }
+  .s{
+    display: block;
+  }
+  </style>
+  <input type="button" value="Add / Remove" id="btn" />
+
+<br />
+<div class="s" id="t"></div>

@@ -1,0 +1,21 @@
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"
+></script>
+<script>
+  $(document).ready(function () {
+    $("#s").click(function () {
+      $(".im").toggle("slow");
+      setTimeout($("#s").click(),10000);
+    });
+  });
+</script>
+<input type="button" value="Show / Hide" id="s" />
+
+<br />
+<img src="../image/motogp.webp" style="width:500px; height:auto; display:none;" class="im" alt="" />       <!--    if many images use class   -->
+<img src="../image/f1.avif" style="width:500px; height:auto;" class="im" alt="" />
+<img src="../image/hyper.png" style="width:500px; height:auto;" class="im" alt="" />
+<img src="../image/motocross.jpeg" style="width:500px; height:auto; display:none;" class="im" alt="" />
+<img src="../image/rally.webp" style="width:500px; height:auto;" class="im" alt="" />

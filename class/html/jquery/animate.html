@@ -1,0 +1,17 @@
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"
+></script>
+<script>
+  $(document).ready(function () {
+    $("#s").click(function () {
+      // $("#im").animate({height: '500px', opacity:0.5});
+      $("#im").animate({height: '500px', width:'50%', opacity:0.5});
+    });
+  });
+</script>
+<input type="button" value="Animate" id="s" />
+
+<br />
+<img src="../image/background.jpg" style="width: 100%;" id="im" alt="" />
