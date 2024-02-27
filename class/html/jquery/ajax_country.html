@@ -1,0 +1,25 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#c").change(function(){
+      $.ajax({
+        url:"country_result.php",
+        type:"GET",
+        data:{cu:$("#c").val()},
+        success:function(res){
+          $("#s").html(res);
+        }
+      })
+      $("#s").css("display","inline");
+
+    })
+  })
+</script>
+<!-- Name: <input /> -->
+<br>
+<select id="c">
+  <option hidden="hidden">Choose..</option>
+  <option>India</option>
+  <option>Pakistan</option>
+</select>
+<select id="s" style="display: none;"></select>

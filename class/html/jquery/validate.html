@@ -1,0 +1,43 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#submit").click(function () {
+      nameError=nameValid();
+      ageError=ageValid();
+      if (nameError && ageError) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+
+    function nameValid() {
+      name = $("#name").val();
+      if (name == "") {
+        $("#sms").html("Name cannnot be null");
+        return false;
+      } else {
+        $("#sms").html("");
+        return true;
+      }
+    }
+
+    function ageValid() {
+      age = $("#age").val();
+      if (age == "") {
+        $("#sms1").html("Age cannnot be null");
+        return false;
+      } else {
+        $("#sms1").html("");
+        return true;
+      }
+    }
+  });
+</script>
+<form action="save.html">
+  Name: <input type="text" id="name" /> <span id="sms"></span><br />
+  Age: &nbsp; <input type="text" id="age" />
+  <span id="sms1"></span>
+  <br />
+  <input type="submit" value="Save" id="submit" />
+</form>

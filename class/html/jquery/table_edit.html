@@ -1,0 +1,63 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("tr input[type='button']").click(function () {
+      btn = $(this).val();
+      tr = $(this).parents("tr");
+      if (btn == "Edit") {
+        tr.find("#lbl_name").addClass("h");
+        tr.find("#lbl_name").removeClass("s");
+        tr.find("input[type=text]").addClass("s");
+        tr.find("input[type=text]").removeClass("h");
+        tr.find("input[type=button]").val("Update");
+      } else {
+        tr.find("#lbl_name").addClass("s");
+        tr.find("#lbl_name").removeClass("h");
+        tr.find("input[type=text]").addClass("h");
+        tr.find("input[type=text]").removeClass("s");
+        tr.find("input[type=button]").val("Edit");
+        name = tr.find("input[type=text]").val();
+        alert(name + " update success!");
+      }
+    });
+  });
+</script>
+<style>
+  .h {
+    display: none;
+  }
+  .s {
+    display: block;
+  }
+</style>
+<table border="1" width="100%" cellspacing="0">
+  <tr>
+    <th>Emp No</th>
+    <th>Emp Name</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td><label>100</label></td>
+    <td>
+      <label id="lbl_name" class="s">Raja</label
+      ><input type="text" class="h" value="Raja" />
+    </td>
+    <td><input type="button" value="Edit" /></td>
+  </tr>
+  <tr>
+    <td><label>101</label></td>
+    <td>
+      <label id="lbl_name" class="s">Aja</label
+      ><input type="text" class="h" value="Aja" />
+    </td>
+    <td><input type="button" value="Edit" /></td>
+  </tr>
+  <tr>
+    <td><label>102</label></td>
+    <td>
+      <label id="lbl_name" class="s">Khaja</label
+      ><input type="text" class="h" value="Khaja" />
+    </td>
+    <td><input type="button" value="Edit" /></td>
+  </tr>
+</table>

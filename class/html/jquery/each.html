@@ -1,0 +1,18 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $.each([10, 20, 30], function (index, value) {         // method 1
+      alert(index + "\t" + value);
+    });
+
+    arr=[10,20,30];
+    $.each(arr, function (index, value) {                  // method 2
+      alert(index + "\t" + value);
+    });
+
+    arr = { bbsr: 70, ctc: 90 };
+    $.each(arr, function (index, value) {                  // method 3
+      alert(index + "\t" + value);
+    });
+  });
+</script>
