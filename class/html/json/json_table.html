@@ -1,0 +1,28 @@
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"
+></script>
+<table border="1px" width="50%" cellspacing="0">
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+  </tr>
+  <script>
+    var data={
+      "employees":[
+        {"firstName":"Raja", "lastName":"Doe"},
+        {"firstName":"Aja", "lastName":"Smith"},
+        {"firstName":"Khaja", "lastName":"Jones"},
+      ]
+    }
+    tr="";
+    $.each(data,function(key,value){
+      td="";
+      $.each(value,function(k,v){
+        tr=tr+"<tr><td>"+v.firstName+"</td><td>"+v.lastName+"</td></tr>";
+      })
+    })
+    document.write(tr);
+  </script>
+</table>

@@ -1,0 +1,22 @@
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"
+></script>
+<script>
+  $(document).ready(function () {
+    $("#btn").click(function () {
+      $.ajax({
+        url: "./result.php",
+        type: "POST",
+        dataType: "json",
+        data: { k: "Haha" },
+        success: function (res) {
+          $("#dis").html(res.bbsr);
+        },
+      });
+    });
+  });
+</script>
+<input type="button" value="Ok" id="btn" />
+<div id="dis"></div>

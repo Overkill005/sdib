@@ -1,0 +1,39 @@
+<script>
+  function nameValid() {
+    let name = document.getElementById("name").value;
+    if (name == "") {
+      document.getElementById("nmsg").innerHTML = "Number cannot be blank";
+      return false;
+    } else {
+      document.getElementById("nmsg").innerHTML = "Valid";
+      return true;
+    }
+  }
+  function mobValid() {
+    let mob = document.getElementById("mob").value;
+    if (mob.match(/^[6-9]{1}[0-9]{9}$/i)) {
+      document.getElementById("msg").innerHTML = "Valid";
+      return true;
+    } else {
+      document.getElementById("msg").innerHTML = "Enter in proper format";
+      return false;
+    }
+  }
+  function check() {
+    nameError = nameValid();
+    mobileError = mobValid();
+    if (mobileError && nameError) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+</script>
+<form action="" onsubmit="return check()">
+  Enter name : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" id="name" /><span id="nmsg"></span>
+  <br />Enter mobile number : <input type="text" id="mob" /><span
+    id="msg"
+  ></span>
+  <br />
+  <input type="submit" value="Submit" id="sub" />
+</form>

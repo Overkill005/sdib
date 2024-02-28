@@ -1,0 +1,27 @@
+<script>
+  function emailValid() {
+    let email = document.getElementById("email").value;
+    if (mob.match(/^$/i)) {
+      document.getElementById("msg").innerHTML = "Valid";
+      return true;
+    } else {
+      document.getElementById("msg").innerHTML = "Enter in proper format";
+      return false;
+    }
+  }
+  function check() {
+    emailError = emailValid();
+    if (emailError) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+</script>
+<form action="" onsubmit="return check()">
+  Enter email id : <input type="text" id="email" /><span
+    id="msg"
+  ></span>
+  <br />
+  <input type="submit" value="Submit" id="sub" />
+</form>
