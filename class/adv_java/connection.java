@@ -4,7 +4,6 @@ class connection {
 
   public static void main(String[] args) throws SQLException {
     String url = "jdbc:mysql://localhost:3306/";
-
     Connection con = DriverManager.getConnection(url, "root", "");
     System.out.println("Success");
     con.close();
