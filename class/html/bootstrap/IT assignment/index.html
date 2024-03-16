@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centered Images with Text</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        text-align: center;
+      }
+      .image-container {
+        position: relative;
+        width: 200px; /* Adjust as needed */
+        margin: 20px auto; /* Adjust as needed */
+      }
+      .image-container img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        display: block;
+      }
+      .text-left,
+      .text-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        padding: 5px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+      }
+      .text-left {
+        left: -200%; /* Adjust to move left */
+        text-align: left;
+        width: 200%;
+      }
+      .text-right {
+        right: -200%; /* Adjust to move right */
+        width: 200%;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <div class="text-left">
+          <h2>Heading- Cutting-edge Infrastructure that sets new standards.</h2>
+          <p>
+            A fully residential campus with separate hostels for boys and girls,
+            academic block, workshop, recreation block, open-air-theatre, sports
+            ground, faculty block, staff dormitory, auditorium, admin block and
+            guesthouse, equipped with state-of-art facilities like smart
+            classrooms, Wi-Fi access, digital learning platform etc.
+          </p>
+        </div>
+        <img
+          src="c:\Users\RISE202312JAVA32\Documents\GitHub\sdib\class\html\image\motocross.jpeg"
+          alt="Image 1"
+        />
+        <div class="text-right">Right Text 1</div>
+      </div>
+
+      <div class="image-container">
+        <div class="text-left">Left Text 2</div>
+        <img
+          src="c:\Users\RISE202312JAVA32\Documents\GitHub\sdib\class\html\image\motocross.jpeg"
+          alt="Image 2"
+        />
+        <div class="text-right">
+          <h2>
+            Heading- Dive into the real world with Industry-Relevant Labs.
+          </h2>
+          <p>
+            Centres of Excellence in partnership with leading industry players
+            like Schneider, Siemens, Kemppi, CISCO and Tata STRIVE. Offers
+            courses aligned with demands of industry. Candidates can join basic
+            level to advanced level short-term courses (3 to 6 months) in
+            manufacturing, CRM, product lifecycle management, energy management,
+            solar PV, IT/ITeS, hospitality etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <div class="text-left"> <h2>Heading- Unlock your career potential with a Higher Placement Rate.</h2>
+        <p>An outcome driven institute with greater emphasis on hands-on training covering both hard and soft skills so as to make students employable or enterprising ones to become entrepreneurs. The institute has consistently achieved placement success of 90% and above since inception.</p>
+      </div></div>
+        <img
+          src="c:\Users\RISE202312JAVA32\Documents\GitHub\sdib\class\html\image\motocross.jpeg"
+          alt="Image 3"
+        />
+        <div class="text-right">Right Text 3</div>
+      </div>
+
+      <div class="image-container">
+        <div class="text-left">Left Text 4</div>
+        <img
+          src="c:\Users\RISE202312JAVA32\Documents\GitHub\sdib\class\html\image\motocross.jpeg"
+          alt="Image 4"
+        />
+        <div class="text-right">Right Text 4</div>
+      </div>
+
+      <div class="image-container">
+        <div class="text-left">Left Text 5</div>
+        <img
+          src="c:\Users\RISE202312JAVA32\Documents\GitHub\sdib\class\html\image\motocross.jpeg"
+          alt="Image 5"
+        />
+        <div class="text-right">Right Text 5</div>
+      </div>
+    </div>
+  </body>
+</html>
